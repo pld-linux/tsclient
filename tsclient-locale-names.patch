@@ -1,0 +1,11 @@
+--- tsclient-0.132/configure.in.orig	Sun Nov  9 08:09:31 2003
++++ tsclient-0.132/configure.in	Thu Jul  8 17:14:07 2004
+@@ -23,7 +23,7 @@
+ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE")
+ 
+ dnl Add the languages which your application supports here.
+-ALL_LINGUAS="ar da_DK de es fi fr gr hu it ms nl_NL no_nb pl_PL pt_BR pt_PT ru se zh_CN zh_TW"
++ALL_LINGUAS="ar da de es fi fr gr hu it ms nl nb pl pt_BR pt ru se zh_CN zh_TW"
+ AM_GLIB_GNU_GETTEXT
+ 
+ dnl ==========================================================================
