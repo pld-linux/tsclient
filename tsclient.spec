@@ -1,4 +1,5 @@
-Summary:	Terminal Server Client is a frontend for rdesktop for the GNOME2 platform.
+Summary:	Terminal Server Client - a frontend for rdesktop for the GNOME2 platform
+Summary(pl):	Terminal Server Client - frontend dla rdesktop dla platformy GNOME2
 Name:		tsclient
 Version:	0.124
 Release:	1
@@ -12,10 +13,13 @@ BuildRequires:	gtk+2-devel >= 2.0.0
 Requires:	rdesktop >= 1.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-
 %description
 Terminal Server Client is a frontend for rdesktop for the GNOME2
 platform.
+
+%description -l pl
+Terminal Server Client to frontend dla programu rdesktop dla platformy
+GNOME2.
 
 %prep
 %setup -q
@@ -28,7 +32,7 @@ platform.
 rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_iconsdir}/gnome/48x48/mimetypes
-cp gnome-mime-application-x-rdp.png $RPM_BUILD_ROOT%{_iconsdir}/gnome/48x48/mimetypes
+install gnome-mime-application-x-rdp.png $RPM_BUILD_ROOT%{_iconsdir}/gnome/48x48/mimetypes
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
