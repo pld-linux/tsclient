@@ -2,7 +2,7 @@ Summary:	Terminal Server Client - a frontend for rdesktop for the GNOME2 platfor
 Summary(pl):	Terminal Server Client - frontend dla rdesktop dla platformy GNOME2
 Name:		tsclient
 Version:	0.132
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.gnomepro.com/tsclient/%{name}-%{version}.tar.gz
@@ -32,10 +32,12 @@ GNOME2.
 %patch0 -p1
 
 mv -f po/{da_DK,da}.po
+mv -f po/{gr,el}.po
 mv -f po/{nl_NL,nl}.po
 mv -f po/{no_nb,nb}.po
 mv -f po/{pl_PL,pl}.po
 mv -f po/{pt_PT,pt}.po
+mv -f po/{se,sv}.po
 
 %build
 %{__aclocal}
