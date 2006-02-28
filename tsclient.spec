@@ -12,8 +12,8 @@ URL:		http://www.gnomepro.com/tsclient/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	glib2-devel >= 2.0.0
-BuildRequires:	gtk+2-devel >= 1:2.0.0
 BuildRequires:	gnome-panel-devel >= 2.0.0
+BuildRequires:	gtk+2-devel >= 1:2.0.0
 BuildRequires:	intltool >= 0.27
 BuildRequires:	pkgconfig
 Requires:	rdesktop >= 1.2.0
@@ -53,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	desktopdir=%{_desktopdir}
 
-%find_lang %{name}	
+%find_lang %{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
