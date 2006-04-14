@@ -39,6 +39,8 @@ mv -f po/{pt_PT,pt}.po
 mv -f po/{se,sv}.po
 
 %build
+%{__glib_gettextize}
+%{__intltoolize}
 %{__aclocal}
 %{__autoconf}
 %{__autoheader}
