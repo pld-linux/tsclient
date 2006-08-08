@@ -1,23 +1,23 @@
 Summary:	Terminal Server Client - a frontend for rdesktop for the GNOME2 platform
 Summary(pl):	Terminal Server Client - frontend dla rdesktop dla platformy GNOME2
 Name:		tsclient
-Version:	0.140
+Version:	0.148
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.gnomepro.com/tsclient/%{name}-%{version}.tar.gz
-# Source0-md5:	c10a5a151a1ece653f62e07b11228534
+# Source0-md5:	06a6ff59b7c8ca26d4ea37340ed77423
 Patch0:		%{name}-locale-names.patch
 URL:		http://www.gnomepro.com/tsclient/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	glib2-devel >= 2.0.0
-BuildRequires:	gnome-panel-devel >= 2.0.0
-BuildRequires:	gtk+2-devel >= 1:2.0.0
+BuildRequires:	glib2-devel >= 2.6.0
+BuildRequires:	gnome-panel-devel >= 2.6.0
+BuildRequires:	gtk+2-devel >= 1:2.6.0
 BuildRequires:	intltool >= 0.27
 BuildRequires:	xorg-lib-libSM-devel
 BuildRequires:	pkgconfig
-Requires:	rdesktop >= 1.2.0
+Requires:	rdesktop >= 1.3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,12 +32,14 @@ GNOME2.
 %setup -q
 %patch0 -p1
 
-mv -f po/{gr,el}.po
 mv -f po/{nl_NL,nl}.po
-mv -f po/{no_nb,nb}.po
+mv -f po/{nl_NL,nl}.gmo
 mv -f po/{pl_PL,pl}.po
+mv -f po/{pl_PL,pl}.gmo
 mv -f po/{pt_PT,pt}.po
+mv -f po/{pt_PT,pt}.gmo
 mv -f po/{se,sv}.po
+mv -f po/{se,sv}.gmo
 
 %build
 %{__glib_gettextize}
