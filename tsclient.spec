@@ -1,5 +1,5 @@
 Summary:	Terminal Server Client - a frontend for rdesktop for the GNOME2 platform
-Summary(pl.UTF-8):   Terminal Server Client - frontend dla rdesktop dla platformy GNOME2
+Summary(pl.UTF-8):	Terminal Server Client - frontend dla rdesktop dla platformy GNOME2
 Name:		tsclient
 Version:	0.148
 Release:	1
