@@ -5,18 +5,18 @@ Version:	0.150
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://dl.sourceforge.net/sourceforge/tsclient/tsclient-0.150.tar.gz
+Source0:	http://dl.sourceforge.net/tsclient/%{name}-%{version}.tar.gz
 # Source0-md5:	1dc95fbdbcf4344d05114e1f43bf32ea
 Patch0:		%{name}-locale-names.patch
 URL:		http://www.gnomepro.com/tsclient/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	glib2-devel >= 2.6.0
+BuildRequires:	glib2-devel >= 1:2.6.0
 BuildRequires:	gnome-panel-devel >= 2.6.0
-BuildRequires:	gtk+2-devel >= 1:2.6.0
+BuildRequires:	gtk+2-devel >= 2:2.6.0
 BuildRequires:	intltool >= 0.27
-BuildRequires:	xorg-lib-libSM-devel
 BuildRequires:	pkgconfig
+BuildRequires:	xorg-lib-libSM-devel
 Requires:	rdesktop >= 1.3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
